@@ -5,47 +5,43 @@
     <link rel="stylesheet" href="game.css"> 
 </head>
 <body>
-    <p class="title">ROCK PAPER SCISSOR</p>
-
-    <h3>Note:</h3> 
-    <h4>
-    <ul>
-        <li  >You can play this game by clicking on image.</li>
-        <li>Another way is by typing the the keywords "r","p","s" which stands for rock,paper,scissor respectively.</li>
-        <li >You can also play this game by using autoplay button </li>
-    </ul> </h4> 
-  
-    <!-- using addEventListener -->
+    <p class="title" >ROCK PAPER SCISSOR</p>
+<h4 class="note">You can play this game by <i>clicking on image</i>.
+        Another way is by typing the the <i>keywords "r","p","s" </i>stands for rock,paper,scissor respectively.
+        You can also play this game by using <i>autoplay button</i>. 
+     </h4> 
     <button  class="move-button rock">
       <img class="move-icon " src="images/rock.png">
     </button>
-  
-    <button onclick="playGame('paper');"
-      class="move-button">
+    <!-- using addEventListener -->
+    <button onclick="
+      playGame('paper');
+    " class="move-button">
       <img class="move-icon" src="images/paper.png">
     </button>
 
-    <button onclick="playGame('scissor');"
-      class="move-button">
+    <button onclick="
+      playGame('scissor');
+    " class="move-button">
       <img class="move-icon" src="images/scissor.png">
     </button>
-  
+
+
     <p class="result"></p>
     <p class="move "></p>
-    <p class="score"></p>
-  
+    <p class="score "></p>
+
+
     <button onclick="
-      score.wins=0,
-      score.lose=0,
-      score.tie=0
-      localStorage.removeItem('score');
-      updatedScore();"
-       class="reset-score-button"
+    score.wins=0,
+    score.lose=0,
+    score.tie=0
+    localStorage.removeItem('score');
+    updatedScore();"
+     class="reset-score-button"
     >Reset score</button>
 
-    <button class="reset-score-button autoplay" 
-      onclick="autoPlay();"
-      >Auto Play</button>
+    <button class="reset-score-button autoplay" onclick="autoPlay();">Auto Play</button>
 
     <script src="game.js"></script>
 </body>
