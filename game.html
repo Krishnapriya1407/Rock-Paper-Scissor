@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="game.css"> 
+</head>
+<body>
+    <p class="title">ROCK PAPER SCISSOR</p>
+
+    <h3>Note:</h3> 
+    <h4>
+    <ul>
+        <li  >You can play this game by clicking on image.</li>
+        <li>Another way is by typing the the keywords "r","p","s" which stands for rock,paper,scissor respectively.</li>
+        <li >You can also play this game by using autoplay button </li>
+    </ul> </h4> 
+  
+    <!-- using addEventListener -->
+    <button  class="move-button rock">
+      <img class="move-icon " src="images/rock.png">
+    </button>
+  
+    <button onclick="playGame('paper');"
+      class="move-button">
+      <img class="move-icon" src="images/paper.png">
+    </button>
+
+    <button onclick="playGame('scissor');"
+      class="move-button">
+      <img class="move-icon" src="images/scissor.png">
+    </button>
+  
+    <p class="result"></p>
+    <p class="move "></p>
+    <p class="score"></p>
+  
+    <button onclick="
+      score.wins=0,
+      score.lose=0,
+      score.tie=0
+      localStorage.removeItem('score');
+      updatedScore();"
+       class="reset-score-button"
+    >Reset score</button>
+
+    <button class="reset-score-button autoplay" 
+      onclick="autoPlay();"
+      >Auto Play</button>
+
+    <script src="game.js"></script>
+</body>
+</html>
