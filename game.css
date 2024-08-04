@@ -1,12 +1,21 @@
-  body{
+body{
     background-color: rgb(25, 25, 25);
     color: white;
     font-family: Arial;
-   }
-
-  .title {
+    text-align: center;
+    }
+    .title {
+      margin-top: 100px;
+      margin-bottom: 50px;
     font-size: 30px;
     font-weight: bold;
+  }
+  .note{
+    padding-left:200px;
+    padding-right:200px;
+    text-align: center;
+    margin-bottom: 50px;
+    
   }
 
   .move-icon {
@@ -31,7 +40,7 @@
   }
 
   .score {
-    margin-top: 60px;
+    margin-top: 30px;
   }
 
   .reset-score-button {
@@ -40,4 +49,6 @@
     font-size: 15px;
     padding: 8px 15px;
     cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 50px;
   }
